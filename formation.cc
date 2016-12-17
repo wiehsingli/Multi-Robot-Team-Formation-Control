@@ -1,6 +1,12 @@
 
 /**
-* g++ -c communicate.c
+*
+*formation.cc
+*
+*Wie Hsing Li 2015
+*
+*To Compile
+*g++ -c communicate.c
 *
 *g++ -I/usr/local/include -L/usr/local/lib -o formation `pkg-config --cflags playerc++` formation.cc `pkg-config --libs playerc++` -lnsl communicate.o
 *
@@ -149,10 +155,8 @@ void parse_msg2(char *msg, float *x, float *y, char *f, char *t)
   while (token != NULL) {
   	*t = token[0];
     if (*t == 'L') {
-//    	printf("This is a leader message.\n");
     }
     if(*t == 'T'){
- //   	printf("This is a task manager message.\n");
     }
     ptr = strstr(token, "$");
     ptr++;
