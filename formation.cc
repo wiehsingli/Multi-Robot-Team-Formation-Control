@@ -185,7 +185,6 @@ void safewalk(double *newspeed, double *newturnrate, LaserProxy &lp, Position2dP
 			if(formation == 'l'){
 				*newspeed = 0.13;
 			}
-//		 	if(counter == 0){*newspeed = 0; *newturnrate = 0;}
 	}else {
 
 		if(r<10 || l <10){
@@ -194,16 +193,9 @@ void safewalk(double *newspeed, double *newturnrate, LaserProxy &lp, Position2dP
 			*newturnrate = dtor(*newturnrate);
 		}else{
 			pp.GoTo(x,y,0);
-//			printf("(X: %f, Y: %f)\n", x, y);
 		}
 	}
 
-	//
-
-
-//	printf("speed: %f\n", *newspeed);
-//	printf("DFC: %f\n", dfc);
-//	printf("NDFC: %f\n", ndfc);
 	
 }
 
